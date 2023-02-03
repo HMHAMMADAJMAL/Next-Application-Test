@@ -9,7 +9,6 @@ const ErrorPage = () => {
   }
   useEffect(() => {
     setTimeout((e) => {
-      e.preventDefault()
       router.push('/')
     }, 1000);
   },)

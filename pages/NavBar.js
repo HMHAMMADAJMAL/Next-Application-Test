@@ -8,7 +8,7 @@ const NavBar = () => {
         <ul style={{ display: "flex", maxWidth: "100vh", width: "100%", marginRight: "20px" }}>
           <Link style={{ margin: "30px" }} href="/about"> Home</Link>
           <Link style={{ margin: "30px" }} href="/about">About</Link>
-          <Link style={{ margin: "30px" }} href="/about">Contact</Link>
+          <Link style={{ margin: "30px" }} href="/blog">Products</Link>
           <Link style={{ margin: "30px" }} href="/about">Services</Link>
         </ul>
       </nav>
