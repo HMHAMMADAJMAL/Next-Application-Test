@@ -4,7 +4,7 @@ const PageNo = ({ data }) => {
   const { title, body } = data;
   return (
     <div>
-      <h6>Detail of Data is </h6>
+      <h6>Details of Data is </h6>
       <div>
         <h3 >Title Here: {title}</h3>
         <p>Body Here: {body}</p>

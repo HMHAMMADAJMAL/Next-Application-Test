@@ -13,7 +13,6 @@ const ErrorPage = () => {
       router.push('/')
     }, 1000);
   },)
-
   return (
     <div>
       <p>Page Not Found</p>
