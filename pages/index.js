@@ -1,25 +1,25 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
-import NavBar from './NavBar'
 
 const index = ({ data }) => {
   return (
-    <div>
-      <Head>
-        <title>HomePage</title>
-      </Head>
-      <NavBar />
-      <h6>
-        Data Value
-      </h6>
-      {data.slice(0, 5).map((data) => {
-        return <div key={data.id}>
-          <Link href={`/blog/${data.id}`}>
-            <p>Title Here: {data.title}</p>
-          </Link>
-        </div>
-      })}
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <Head>
+          <title>Home Page</title>
+        </Head>
+        <h4>
+          Blog Data Content
+        </h4>
+        {data.slice(0, 10).map((data) => {
+          return <div key={data.id}>
+            <Link href={`/blog/${data.id}`}>
+              <p>Title Here is: {data.title}</p>
+            </Link>
+          </div>
+        })}
+      </div>
     </div>
   )
 }
